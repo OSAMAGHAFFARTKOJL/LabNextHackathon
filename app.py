@@ -28,7 +28,7 @@ if tab == "Chatbot":
     st.title("ChatCinema")
 
     # Step 1: Read the CSV file
-    csv_file_path = '/content/Hydra-Movie-Scrape.csv'
+    csv_file_path = 'Hydra-Movie-Scrape.csv'
     df = pd.read_csv(csv_file_path)
 
     # Ensure there are no NaN values in the 'Summary' column
@@ -140,7 +140,7 @@ if tab == "Chatbot":
         new_df = pd.DataFrame(new_data)
 
         # Check if the file exists
-        output_csv_path = '/content/summary_output.csv'
+        output_csv_path = 'summary_output.csv'
         if os.path.exists(output_csv_path):
             # If it exists, append to the existing file
             existing_df = pd.read_csv(output_csv_path)
@@ -154,7 +154,7 @@ if tab == "Chatbot":
 
 elif tab == "Download Chat History":
     st.header("Download your History")
-    csv_file_path = '/content/summary_output.csv'
+    csv_file_path = 'summary_output.csv'
     df = pd.read_csv(csv_file_path)
     if st.button("Download History"):
         
