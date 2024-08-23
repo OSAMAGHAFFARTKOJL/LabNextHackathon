@@ -2,6 +2,7 @@
 ChatCinema: A Conversational Movie Recommendation System
 Overview
 ChatCinema is a conversational movie recommendation system that uses natural language processing and machine learning to provide personalized movie suggestions based on user input. The system is built using Streamlit, a Python library for building web applications, and leverages the power of Groq, a vector database, to store and retrieve movie embeddings.
+You can check here : https://chat-cinema.streamlit.app/
 
 Features
 Conversational interface for users to input movie names or descriptions
